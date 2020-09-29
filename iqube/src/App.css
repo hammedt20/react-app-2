@@ -1,5 +1,4 @@
 *{
-   
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,26 +6,22 @@
 
 body {
   width: 100%;
-  height: 1480px;
-  background: url('./Vector\ 55.png');
+  height: 1114px;
+  background: url("./Vector\ 55\ \(1\).png");
   background-repeat: no-repeat;
   font-family: 'Nunito Sans', sans-serif;
   display: grid;
   grid-template-columns: 27% 49% 23.5%;
   grid-template-areas: ". two .";
   position: relative;
-
 }
 
 .two {
   grid-area: two;
-  /* border: 2px solid black;
-   */
+  /* border: 2px solid black; */
 }
 
 .header {
-  position: absolute;
-  top: 12.36%;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -34,6 +29,9 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: #4E598C;
+  position: absolute;
+  top: 16.43%;
+  bottom: 79.08%;
 }
 
 .subtitle {
@@ -43,121 +41,40 @@ body {
   line-height: 34px;
   color:  #BDBDBD;
   display: flex;
-  top: 19.73%;
-  bottom: 77.97%;
+  justify-content: space-between;
   position: absolute;
-
+  top: 26.21%;
+  bottom: 70.74%;
 }
 
 .active{
   color: #F2994A;
   justify-self: start;
-}
-
-.firsttext {
   position: relative;
-  left: 13.68%;
-  right: 48.26%;
-  width: 140px;
-  justify-self: center;
+  left: 27.22%;
 }
 
 .secondtext {
-  justify-self: end;
   position: relative;
-  left: 30.76%;
+  left: 42.76%;
 }
 
 hr {
   border: 1px solid #000000;
   display: block;
-  position: relative;
-  top: 359px;
+  position: absolute;
+  top: 31.69%;
+  width: 49%;
 }
 
 .activeline {
   position: absolute;
-  top: 55px;
-  width: 170px;
-  border-radius: 10px;
+  left: 53.88%;
+  width: 35.8%;  
+  top: 150%;
   border: 13px solid #F2994A;
+  border-radius: 10px;
   z-index: 1;
-}
-
-.label1 {
-  position: absolute;
-  top: 29.32%;
-  bottom: 68.65%;
-}
-
-#name {
-  position: absolute;
-  top: 32.43%;
-  bottom: 63.24%;
-}
-
-.required {
-  position: absolute;
-  top: 39.73%;
-  bottom: 58.24%;
-}
-
-#email {
-  position: absolute;
-  top: 45.74%;
-  bottom: 49.93%;
-}
-
-.label2 {
-  position: absolute;
-  top: 54.12%;
-  bottom: 43.85%;
-}
-
-#address {
-  position: absolute;
-  top: 56.89%;
-  bottom: 38.78%;    
-}
-
-.label3 {
-  position: absolute;
-  top: 64.53%;
-  bottom: 33.45%;
-}
-
-#address2 {
-  position: absolute;
-  top: 67.3%;
-  bottom: 28.38%;   
-}
-
-.label4 {
-  position: absolute;
-  top: 76.08%;
-  bottom: 21.89%;
-}
-
-#lg {
-  position: absolute;
-  top: 78.85%;
-  bottom: 16.82%;  
-  width: 29%;   
-}
-
-.label5 {
-  position: absolute;
-  top: 76.08%;
-  bottom: 21.89%;
-  left: 58%;
-}
-
-#state {
-  position: absolute;
-  top: 78.85%;
-  bottom: 16.82%;  
-  width: 18%;  
-  left: 58%;
 }
 
 label {
@@ -168,6 +85,86 @@ label {
   color: #000000;
 }
 
+.label1 {
+  position: absolute;
+  top: 35.73%;
+}
+
+#name {
+  position: absolute;
+  top: 39.86%;
+  bottom: 54.4%;
+}
+
+.label2 {
+  position: absolute;
+  top: 49.82%;
+}
+
+#type {
+  position: absolute;
+  top: 53.95%;
+}
+
+.label3 {
+  position: absolute;
+  top: 64%;
+  bottom: 33.3%;
+}
+
+#details {
+  position: absolute;
+  top: 67.68%;
+  bottom: 26.57%;
+  width: 27.1%;
+  padding: 0;
+}
+
+#details::placeholder {
+  text-align: center;
+}
+
+.label4 {
+  position: absolute;
+  left: 57.92%;
+  top: 64%;
+  bottom: 33.3%;
+}
+
+#date {
+  position: absolute;
+  left: 57.22%;
+  right: 33.61%;
+  top: 67.68%;
+  width: 9.1%;
+}
+
+#date::placeholder {
+  text-align: center;
+}
+
+.label5 {
+  position: absolute;
+  left: 71.46%;
+  right: 25.62%;
+  top: 64%;
+  width: 5%;
+}
+
+#cvv {
+  position: absolute;
+  left: 68.9%;
+  right: 23.47%;
+  top: 67.68%;
+  width: 7.2%;
+}
+
+#cvv::placeholder {
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+}
+
 input {
   background: #FFFFFF;
   border: 1px solid #4E598C;
@@ -175,7 +172,6 @@ input {
   height: 64px;
   width: 48.7%;
   border-radius: 10px;
-
 }
 
 ::placeholder{
@@ -197,8 +193,11 @@ select {
   -webkit-appearance: none;
   background-image: url("./Vector.png");
   background-repeat: no-repeat;
-  background-position: center right 20; 
-  -webkit-padding-start: 2px;
+  background-position: center right 60; 
+  border: 1px solid #4E598C;
+  height: 64px;
+  width: 48.7%;
+  border-radius: 10px;
 }
 
 .required:after {
@@ -210,23 +209,7 @@ select {
   line-height: 30px;
 }
 
-small {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #817E9E;
-  position: absolute;
-  top: 42.5%;
-  bottom: 55.88%;
-}
-
 button {
-  position: absolute;
-  height: 58px;
-  width: 17%;
-  top: 88.58%;
-  bottom: 7.5%;
   border-radius: 10px;
   background: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
   border: none;
@@ -235,9 +218,14 @@ button {
   font-size: 20px;
   line-height: 30px;
   color: #F7F7FF;
+  height: 58px;
+  /* width: 17%; */
+  width: 238px;
+  position: absolute;
+  top: 80.68%;
 }
 
-.three {
+.third {
   display: flex;
   align-items: center;
 }
@@ -249,11 +237,8 @@ button {
   line-height: 30px;
   color: #4E598C;
   position: absolute;
-  top: 89.53%;
-  bottom: 8.45%;
-  left: 49.3%;    
-}
-
-.lasttags {
-  display: flex;
+  left: 48.54%;
+  right: 41.11%;
+  top: 81.96%;
+  width: 12.3%;
 }

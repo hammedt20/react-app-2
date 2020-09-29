@@ -2,18 +2,20 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div>
+       <div>
             <section className="first"/>
-                <h1 className="header">Complete your Purchase</h1>
+                <div className="header">
+                    <h1>Complete Your Purchase</h1>
+                </div>
                 <div className="subtitle"/>
-                    <p className="active">Personal Info</p>
+                    <p className="firsttext">Personal Info</p>
+                    <p className="active">Billing Info</p>
                     <hr className="activeline"/>
-                    <p className="firsttext">Billing Info</p>
                     <p className="secondtext">Confirm Payment</p>
                 <div/>
                 <hr/>
             <section/>
-        </div>
+       </div>
     )
 }
 
