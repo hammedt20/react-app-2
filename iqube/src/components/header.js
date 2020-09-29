@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-       <div>
+        <div>
             <section className="first"/>
                 <div className="header">
                     <h1>Complete Your Purchase</h1>
@@ -15,7 +15,7 @@ const Header = () => {
                 <div/>
                 <hr/>
             <section/>
-       </div>
+        </div>
     )
 }
 
