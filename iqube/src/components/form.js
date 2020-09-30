@@ -2,33 +2,31 @@ import React from 'react';
 
 const Form = () => {
     return (
-        
-           <div>
-                <form action=""/>
-                    <div className="tags"/>
-                        <label for="name" className="required label1">Name on Card</label>
-                        <input type="text" id="name" placeholder="Opara Linus Ahmed"/>
+        <div>
+            <section class="second"/>
+                <section class="top"/>
+                    <div id="topic"/>
+                        <p class="item">Item Name</p>
+                        <p class="price"/><img src="./Vector (2).png" alt=""/>   Price<p/>
                     <div/>
-                    <div className="tags">
-                        <label for="type" className="required label2">Card type</label>
-                        <select name="" id="type">
-                            <option value="visa">Visa</option>
-                        </select>
+                <section/>
+                <section class="bottom"/>
+                    <div class="topic1">
+                        <p class="item">Data science and usability</p>
+                        <p class="price">50,000.00</p>
                     </div>
-                    <div className="lasttags"/>
-                        <label for="details" className="required label3">Card Details</label>
-                        <input type="text" id="details" placeholder="44960      44960      44960      44960"/>
-                        
-                        <label for="date" className="required label4">Expiry Date</label>
-                        <input type="text" id="date" placeholder="04   /   23"/>
-
-                        <label for="cvv" className="required label5">CVV</label>
-                        <input type="text" id="cvv" placeholder="923"/>
-                    <div/>
-                    
-                <form/>
-           </div>
-    
+                    <div class="topic1 Shipping">
+                        <p class="item">Shipping</p>
+                        <p class="price" style="color:black">0.00</p>
+                    </div>
+                    <hr class="bottomline"/>
+                    <div class="topic3">
+                        <p class="item">Total</p>
+                        <p class="price">50,000.00</p>
+                    </div>
+                <section/>
+            <section/>
+        </div>
     )
 }
 

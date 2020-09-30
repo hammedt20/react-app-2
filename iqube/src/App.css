@@ -7,11 +7,11 @@
 body {
   width: 100%;
   height: 1114px;
-  background: url("./Vector\ 55\ \(1\).png");
+  background: url("./Vector\ 55.png");
   background-repeat: no-repeat;
   font-family: 'Nunito Sans', sans-serif;
   display: grid;
-  grid-template-columns: 27% 49% 23.5%;
+  grid-template-columns: 25.8% 52.5% 21.67%;
   grid-template-areas: ". two .";
   position: relative;
 }
@@ -31,6 +31,7 @@ body {
   color: #4E598C;
   position: absolute;
   top: 16.43%;
+  left: 27.15%;
   bottom: 79.08%;
 }
 
@@ -44,14 +45,41 @@ body {
   justify-content: space-between;
   position: absolute;
   top: 26.21%;
-  bottom: 70.74%;
+  left: 27.15%;
+  bottom: 70.29%;
 }
 
-.active{
+hr {
+  position: absolute;
+  border: 1px solid #000000;
+  top: 31.69%;
+  bottom: 68.31%;
+  width: 49.3%;
+  left: 27.15%;
+}
+
+.active {
   color: #F2994A;
-  justify-self: start;
   position: relative;
-  left: 27.22%;
+  left: 27.68%;
+}
+
+.activeline {
+  position: absolute;
+  left: 53.88%;
+  width: 35.8%;
+  top: 128%;
+  z-index: 1;
+  border: 13px solid #F2994A;
+  border-radius: 10px;    
+}
+
+.bottomline {
+  position: relative;
+  left: -18.76%;
+  width: 143%;
+  top: 61.76%;
+  border: 1px solid #817E9E;
 }
 
 .secondtext {
@@ -59,154 +87,9 @@ body {
   left: 42.76%;
 }
 
-hr {
-  border: 1px solid #000000;
-  display: block;
-  position: absolute;
-  top: 31.69%;
-  width: 49%;
-}
-
-.activeline {
-  position: absolute;
-  left: 53.88%;
-  width: 35.8%;  
-  top: 150%;
-  border: 13px solid #F2994A;
-  border-radius: 10px;
-  z-index: 1;
-}
-
-label {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
-  color: #000000;
-}
-
-.label1 {
-  position: absolute;
-  top: 35.73%;
-}
-
-#name {
-  position: absolute;
-  top: 39.86%;
-  bottom: 54.4%;
-}
-
-.label2 {
-  position: absolute;
-  top: 49.82%;
-}
-
-#type {
-  position: absolute;
-  top: 53.95%;
-}
-
-.label3 {
-  position: absolute;
-  top: 64%;
-  bottom: 33.3%;
-}
-
-#details {
-  position: absolute;
-  top: 67.68%;
-  bottom: 26.57%;
-  width: 27.1%;
-  padding: 0;
-}
-
-#details::placeholder {
-  text-align: center;
-}
-
-.label4 {
-  position: absolute;
-  left: 57.92%;
-  top: 64%;
-  bottom: 33.3%;
-}
-
-#date {
-  position: absolute;
-  left: 57.22%;
-  right: 33.61%;
-  top: 67.68%;
-  width: 9.1%;
-}
-
-#date::placeholder {
-  text-align: center;
-}
-
-.label5 {
-  position: absolute;
-  left: 71.46%;
-  right: 25.62%;
-  top: 64%;
-  width: 5%;
-}
-
-#cvv {
-  position: absolute;
-  left: 68.9%;
-  right: 23.47%;
-  top: 67.68%;
-  width: 7.2%;
-}
-
-#cvv::placeholder {
-  text-align: center;
-  color: #000000;
-  font-weight: bold;
-}
-
-input {
-  background: #FFFFFF;
-  border: 1px solid #4E598C;
-  box-sizing: border-box;
-  height: 64px;
-  width: 48.7%;
-  border-radius: 10px;
-}
-
-::placeholder{
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  color: #4F4F4F;
-  padding-left: 2.95%;
-}
-
-select {
-  padding-left: 0.95% !important;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  color: #4F4F4F;
-  -webkit-appearance: none;
-  background-image: url("./Vector.png");
-  background-repeat: no-repeat;
-  background-position: center right 60; 
-  border: 1px solid #4E598C;
-  height: 64px;
-  width: 48.7%;
-  border-radius: 10px;
-}
-
-.required:after {
-  content:" *";
-  color: #EB5757;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
+.third {
+  display: flex;
+  align-items: center;
 }
 
 button {
@@ -219,15 +102,10 @@ button {
   line-height: 30px;
   color: #F7F7FF;
   height: 58px;
-  /* width: 17%; */
   width: 238px;
   position: absolute;
-  top: 80.68%;
-}
-
-.third {
-  display: flex;
-  align-items: center;
+  top: 80.34%;
+  bottom: 13.73%;
 }
 
 .thirdtext {
@@ -238,7 +116,116 @@ button {
   color: #4E598C;
   position: absolute;
   left: 48.54%;
-  right: 41.11%;
   top: 81.96%;
-  width: 12.3%;
+  bottom: 15.35%;
+}
+
+.second {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 15px rgba(33, 30, 67, 0.08);
+  border-radius: 10px;
+  height: 36.35%;
+  width: 52.2%;
+  border-radius: 10px;
+  position: absolute;
+  top: 37.79%;
+}
+
+.top {
+  background: #2F80ED;
+  border-radius: 16px 10px 0px 0px;
+  height: 17.28%;
+  
+  padding-left: 15.26%;
+  padding-right: 19.2%;
+  display: flex;
+ 
+}
+
+.bottom {
+  padding-left: 15.26%;
+  padding-right: 19.2%;
+}
+
+#topic{
+  color: #FFFFFF;
+  width: 614px;
+  /* border: 2px solid black; */
+  align-items: center;
+  justify-content: space-between; 
+ 
+}
+
+#topic .item {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  top: 39.41%;
+}
+
+img {
+  padding-right: 1.83%;
+}
+
+#topic .price{
+  color: #FFFFFF;
+}
+
+#tax .price {
+  color: black;
+}
+
+.price {
+  float: right;
+  padding-right: 4.9%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+  
+  
+  /* purple */
+  
+  color: #4E598C;
+}
+
+.item{
+  padding-left: 3.21%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height, or 150% */
+
+
+  /* purple */
+
+  color: #4E598C;
+}
+
+.topic1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8.2%;
+  padding-bottom: 5.3%;
+}
+
+.topic1.Shipping {
+  padding-top: 0;
+}
+
+.topic3 {
+  margin-top: 5.15%;
+  border: 1px solid #817E9E;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  height: 58px;
+  align-items: center;
+  justify-content: space-between;
 }

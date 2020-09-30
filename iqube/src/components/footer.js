@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <section className="three">
-                <button className="submit">Next</button>
-                <p className="thirdtext">Cancel Payment</p>
+        <section class="third">
+            <button class="submit">Pay</button>
+            <p class="thirdtext">Cancel Payment</p>
         </section>
     )
 }
