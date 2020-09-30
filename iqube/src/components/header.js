@@ -3,15 +3,13 @@ import React from 'react';
 const Header = () => {
     return (
         <div>
-            <section className="first"/>
-                <div className="header">
-                    <h1>Complete Your Purchase</h1>
-                </div>
-                <div className="subtitle"/>
-                    <p className="firsttext">Personal Info</p>
-                    <p className="active">Billing Info</p>
-                    <hr className="activeline"/>
-                    <p className="secondtext">Confirm Payment</p>
+            <section class="first"/>
+                <h1 class="header">Complete your Purchase</h1>
+                <div class="subtitle"/>
+                    <p class="active">Personal Info</p>
+                    <hr class="activeline"/>
+                    <p class="firsttext">Billing Info</p>
+                    <p class="secondtext">Confirm Payment</p>
                 <div/>
                 <hr/>
             <section/>

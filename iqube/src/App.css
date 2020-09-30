@@ -1,4 +1,5 @@
 *{
+   
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,22 +7,26 @@
 
 body {
   width: 100%;
-  height: 1114px;
-  background: url("./Vector\ 55.png");
+  height: 1480px;
+  background: url('./Vector\ 55.png');
   background-repeat: no-repeat;
   font-family: 'Nunito Sans', sans-serif;
   display: grid;
-  grid-template-columns: 25.8% 52.5% 21.67%;
+  grid-template-columns: 27% 49% 23.5%;
   grid-template-areas: ". two .";
   position: relative;
+
 }
 
 .two {
   grid-area: two;
-  /* border: 2px solid black; */
+  /* border: 2px solid black;
+   */
 }
 
 .header {
+  position: absolute;
+  top: 12.36%;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -29,10 +34,6 @@ body {
   letter-spacing: 0em;
   text-align: left;
   color: #4E598C;
-  position: absolute;
-  top: 16.43%;
-  left: 27.15%;
-  bottom: 79.08%;
 }
 
 .subtitle {
@@ -42,57 +43,190 @@ body {
   line-height: 34px;
   color:  #BDBDBD;
   display: flex;
-  justify-content: space-between;
+  top: 19.73%;
+  bottom: 77.97%;
   position: absolute;
-  top: 26.21%;
-  left: 27.15%;
-  bottom: 70.29%;
+
+}
+
+.active{
+  color: #F2994A;
+  justify-self: start;
+}
+
+.firsttext {
+  position: relative;
+  left: 13.68%;
+  right: 48.26%;
+  width: 140px;
+  justify-self: center;
+}
+
+.secondtext {
+  justify-self: end;
+  position: relative;
+  left: 30.76%;
 }
 
 hr {
-  position: absolute;
   border: 1px solid #000000;
-  top: 31.69%;
-  bottom: 68.31%;
-  width: 49.3%;
-  left: 27.15%;
-}
-
-.active {
-  color: #F2994A;
+  display: block;
   position: relative;
-  left: 27.68%;
+  top: 359px;
 }
 
 .activeline {
   position: absolute;
-  left: 53.88%;
-  width: 35.8%;
-  top: 128%;
-  z-index: 1;
+  top: 55px;
+  width: 170px;
+  border-radius: 10px;
   border: 13px solid #F2994A;
-  border-radius: 10px;    
+  z-index: 1;
 }
 
-.bottomline {
-  position: relative;
-  left: -18.76%;
-  width: 143%;
-  top: 61.76%;
-  border: 1px solid #817E9E;
+.label1 {
+  position: absolute;
+  top: 29.32%;
+  bottom: 68.65%;
 }
 
-.secondtext {
-  position: relative;
-  left: 42.76%;
+#name {
+  position: absolute;
+  top: 32.43%;
+  bottom: 63.24%;
 }
 
-.third {
-  display: flex;
-  align-items: center;
+.required {
+  position: absolute;
+  top: 39.73%;
+  bottom: 58.24%;
+}
+
+#email {
+  position: absolute;
+  top: 45.74%;
+  bottom: 49.93%;
+}
+
+.label2 {
+  position: absolute;
+  top: 54.12%;
+  bottom: 43.85%;
+}
+
+#address {
+  position: absolute;
+  top: 56.89%;
+  bottom: 38.78%;    
+}
+
+.label3 {
+  position: absolute;
+  top: 64.53%;
+  bottom: 33.45%;
+}
+
+#address2 {
+  position: absolute;
+  top: 67.3%;
+  bottom: 28.38%;   
+}
+
+.label4 {
+  position: absolute;
+  top: 76.08%;
+  bottom: 21.89%;
+}
+
+#lg {
+  position: absolute;
+  top: 78.85%;
+  bottom: 16.82%;  
+  width: 29%;   
+}
+
+.label5 {
+  position: absolute;
+  top: 76.08%;
+  bottom: 21.89%;
+  left: 58%;
+}
+
+#state {
+  position: absolute;
+  top: 78.85%;
+  bottom: 16.82%;  
+  width: 18%;  
+  left: 58%;
+}
+
+label {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+input {
+  background: #FFFFFF;
+  border: 1px solid #4E598C;
+  box-sizing: border-box;
+  height: 64px;
+  width: 48.7%;
+  border-radius: 10px;
+
+}
+
+::placeholder{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4F4F4F;
+  padding-left: 2.95%;
+}
+
+select {
+  padding-left: 0.95% !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #4F4F4F;
+  -webkit-appearance: none;
+  background-image: url("./Vector.png");
+  background-repeat: no-repeat;
+  background-position: center right 20; 
+  -webkit-padding-start: 2px;
+}
+
+.required:after {
+  content:" *";
+  color: #EB5757;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+small {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #817E9E;
+  position: absolute;
+  top: 42.5%;
+  bottom: 55.88%;
 }
 
 button {
+  position: absolute;
+  height: 58px;
+  width: 17%;
+  top: 88.58%;
+  bottom: 7.5%;
   border-radius: 10px;
   background: linear-gradient(180deg, #F2C94C 0%, #F2994A 100%);
   border: none;
@@ -101,11 +235,11 @@ button {
   font-size: 20px;
   line-height: 30px;
   color: #F7F7FF;
-  height: 58px;
-  width: 238px;
-  position: absolute;
-  top: 80.34%;
-  bottom: 13.73%;
+}
+
+.three {
+  display: flex;
+  align-items: center;
 }
 
 .thirdtext {
@@ -115,117 +249,11 @@ button {
   line-height: 30px;
   color: #4E598C;
   position: absolute;
-  left: 48.54%;
-  top: 81.96%;
-  bottom: 15.35%;
+  top: 89.53%;
+  bottom: 8.45%;
+  left: 49.3%;    
 }
 
-.second {
-  background: #FFFFFF;
-  box-shadow: 0px 10px 15px rgba(33, 30, 67, 0.08);
-  border-radius: 10px;
-  height: 36.35%;
-  width: 52.2%;
-  border-radius: 10px;
-  position: absolute;
-  top: 37.79%;
-}
-
-.top {
-  background: #2F80ED;
-  border-radius: 16px 10px 0px 0px;
-  height: 17.28%;
-  
-  padding-left: 15.26%;
-  padding-right: 19.2%;
+.lasttags {
   display: flex;
- 
-}
-
-.bottom {
-  padding-left: 15.26%;
-  padding-right: 19.2%;
-}
-
-#topic{
-  color: #FFFFFF;
-  width: 614px;
-  /* border: 2px solid black; */
-  align-items: center;
-  justify-content: space-between; 
- 
-}
-
-#topic .item {
-  color: #FFFFFF;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
-  position: relative;
-  top: 39.41%;
-}
-
-img {
-  padding-right: 1.83%;
-}
-
-#topic .price{
-  color: #FFFFFF;
-}
-
-#tax .price {
-  color: black;
-}
-
-.price {
-  float: right;
-  padding-right: 4.9%;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 30px;
-  /* identical to box height, or 150% */
-  
-  
-  /* purple */
-  
-  color: #4E598C;
-}
-
-.item{
-  padding-left: 3.21%;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-  /* identical to box height, or 150% */
-
-
-  /* purple */
-
-  color: #4E598C;
-}
-
-.topic1 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 8.2%;
-  padding-bottom: 5.3%;
-}
-
-.topic1.Shipping {
-  padding-top: 0;
-}
-
-.topic3 {
-  margin-top: 5.15%;
-  border: 1px solid #817E9E;
-  box-sizing: border-box;
-  border-radius: 5px;
-  display: flex;
-  height: 58px;
-  align-items: center;
-  justify-content: space-between;
 }
