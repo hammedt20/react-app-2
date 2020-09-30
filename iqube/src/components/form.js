@@ -2,45 +2,31 @@ import React from 'react';
 
 const Form = () => {
     return (
-        <div>
+        <section class="second"/>
             <form action=""/>
                 <div class="tags"/>
-                    <label for="name" class="label1">Name</label>
-                    <br/>
+                    <label for="name" class="required label1">Name on Card</label>
                     <input type="text" id="name" placeholder="Opara Linus Ahmed"/>
                 <div/>
-                <div class="tags"/>
-                    <label for="email" class="required">Email Address</label>
-                    <br/>
-                    <small>The purchase receipt would be sent to this address</small>
-                    <br/>
-                    <input type="email" id="email" placeholder="OparaLinusAhmed@devmail.com"/>
-                    
-                <div/>
-                <div class="tags"/>
-                    <label for="address" class="label2">Address 1</label>
-                    <br/>
-                    <input type="text" id="address" placeholder="The address of the user goes here"/>
-                <div/>
-                <div class="tags"/>
-                    <label for="address2" class="label3">Address 2</label>
-                    <br/>
-                    <input type="text" id="address2" placeholder="and here"/>
-                <div/>
+                <div class="tags">
+                    <label for="type" class="required label2">Card type</label>
+                    <select name="" id="type">
+                        <option value="visa">Visa</option>
+                    </select>
+                </div>
                 <div class="lasttags"/>
-                    <label for="lg" class="label4">Local Government</label>
-                    <br/>
-                    <input type="text" id="lg" placeholder="Surulere"/>
-                    <div class="secondtag"/>
-                        <label for="state" class="label5">State</label>
-                        <br/>
-                        <select name="" id="state">
-                            <option value="lagos">Lagos</option>
-                        </select>
-                    <div/>
+                    <label for="details" class="required label3">Card Details</label>
+                    <input type="text" id="details" placeholder="44960      44960      44960      44960"/>
+                    
+                    <label for="date" class="required label4">Expiry Date</label>
+                    <input type="text" id="date" placeholder="04   /   23"/>
+
+                    <label for="cvv" class="required label5">CVV</label>
+                    <input type="text" id="cvv" placeholder="923"/>
                 <div/>
+                
             <form/>
-        </div>
+        <section/>
     )
 }
 

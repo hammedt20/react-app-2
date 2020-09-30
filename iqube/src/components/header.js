@@ -4,11 +4,13 @@ const Header = () => {
     return (
         <div>
             <section class="first"/>
-                <h1 class="header">Complete your Purchase</h1>
+                <div class="header">
+                    <h1>Complete Your Purchase</h1>
+                </div>
                 <div class="subtitle"/>
-                    <p class="active">Personal Info</p>
+                    <p class="firsttext">Personal Info</p>
+                    <p class="active">Billing Info</p>
                     <hr class="activeline"/>
-                    <p class="firsttext">Billing Info</p>
                     <p class="secondtext">Confirm Payment</p>
                 <div/>
                 <hr/>
